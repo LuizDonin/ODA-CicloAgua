@@ -24,7 +24,8 @@ export default class GameScene extends Phaser.Scene {
     }
   
     startDragPhase() {
-        this.scene.start('dragSystem', { quiz: this.quiz });
+        const data = this.registry.get('gameData');
+        this.scene.start('dragSystem', { data });
     }
   
     onDragComplete(payload) {
