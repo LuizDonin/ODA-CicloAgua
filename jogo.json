@@ -2,13 +2,20 @@
     "drag": {
         "units": "normalized",             
         "textboxSpriteKey": "words_img"        
-        },
+    },
+    "feedback": {
+        "correct": "correct_icon",
+        "wrong": "wrong_icon"
+    },
+    "phaseintros": {
+        "intro1": "Arraste as palavras até as frases correspondentes!"
+    },
     "targets": [
-        { "sprite": "Text_1", "id": "t-evaporacao",  "x": 0.82, "y": 0.20, "w": 0.28, "h": 0.12 },
-        { "sprite": "Text_2", "id": "t-condensacao", "x": 0.50, "y": 0.20, "w": 0.28, "h": 0.12 },
-        { "sprite": "Text_3", "id": "t-precipitacao","x": 0.82, "y": 0.80, "w": 0.28, "h": 0.12 },
-        { "sprite": "Text_4", "id": "t-infiltracao", "x": 0.50, "y": 0.80, "w": 0.28, "h": 0.12 }
-      ],
+        { "sprite": "Text_1", "id": "t-evaporacao",  "x": 0.82, "y": 0.25, "w": 0.28, "h": 0.12 },
+        { "sprite": "Text_2", "id": "t-condensacao", "x": 0.50, "y": 0.25, "w": 0.28, "h": 0.12 },
+        { "sprite": "Text_3", "id": "t-precipitacao","x": 0.82, "y": 0.75, "w": 0.28, "h": 0.12 },
+        { "sprite": "Text_4", "id": "t-infiltracao", "x": 0.50, "y": 0.75, "w": 0.28, "h": 0.12 }
+    ],
     "items": [
         {
             "text": "Evaporação",
@@ -30,5 +37,6 @@
             "start": { "x": 0.18, "y": 0.68 },
             "targetId": "t-infiltracao"
         }
-      ]
+    ]
+    
 }

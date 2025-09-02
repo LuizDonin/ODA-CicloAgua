@@ -17,6 +17,9 @@ export default class dataLoader extends Phaser.Scene {
         this.load.image('Text_2', 'assets/images/Text_2.png');
         this.load.image('Text_3', 'assets/images/Text_3.png');
         this.load.image('Text_4', 'assets/images/Text_4.png');
+        this.load.image('correct_icon', 'assets/images/correct_icon.png');
+        this.load.image('wrong_icon', 'assets/images/wrong_icon.png');
+
     }
   
     async create() {    
