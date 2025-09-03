@@ -1,42 +1,106 @@
 {
-    "drag": {
-        "units": "normalized",             
-        "textboxSpriteKey": "words_img"        
+  "drag": {
+    "units": "normalized",
+    "textboxSpriteKey": "words_img",
+    "dragScore": 0
+  },
+  "feedback": {
+    "correct": "correct_icon",
+    "wrong": "wrong_icon"
+  },
+  "phaseintros": {
+    "intro1": "Arraste as palavras até as frases correspondentes!",
+    "intro2": "Responda o Quiz sobre o ciclo da água!"
+  },
+  "targets": [
+    { "sprite": "Text_1", "id": "t-evaporacao", "x": 0.82, "y": 0.25 },
+    { "sprite": "Text_2", "id": "t-condensacao", "x": 0.5, "y": 0.25 },
+    { "sprite": "Text_3", "id": "t-precipitacao", "x": 0.82, "y": 0.75 },
+    { "sprite": "Text_4", "id": "t-infiltracao", "x": 0.5, "y": 0.75 }
+  ],
+  "items": [
+    {
+      "text": "Evaporação",
+      "start": { "x": 0.18, "y": 0.2 },
+      "targetId": "t-evaporacao"
     },
-    "feedback": {
-        "correct": "correct_icon",
-        "wrong": "wrong_icon"
+    {
+      "text": "Condensação",
+      "start": { "x": 0.18, "y": 0.36 },
+      "targetId": "t-condensacao"
     },
-    "phaseintros": {
-        "intro1": "Arraste as palavras até as frases correspondentes!"
+    {
+      "text": "Precipitação",
+      "start": { "x": 0.18, "y": 0.52 },
+      "targetId": "t-precipitacao"
     },
-    "targets": [
-        { "sprite": "Text_1", "id": "t-evaporacao",  "x": 0.82, "y": 0.25, "w": 0.28, "h": 0.12 },
-        { "sprite": "Text_2", "id": "t-condensacao", "x": 0.50, "y": 0.25, "w": 0.28, "h": 0.12 },
-        { "sprite": "Text_3", "id": "t-precipitacao","x": 0.82, "y": 0.75, "w": 0.28, "h": 0.12 },
-        { "sprite": "Text_4", "id": "t-infiltracao", "x": 0.50, "y": 0.75, "w": 0.28, "h": 0.12 }
-    ],
-    "items": [
-        {
-            "text": "Evaporação",
-            "start": { "x": 0.18, "y": 0.20 },
-            "targetId": "t-evaporacao"
-        },
-        {
-            "text": "Condensação",
-            "start": { "x": 0.18, "y": 0.36 },
-            "targetId": "t-condensacao"
-        },
-        {
-            "text": "Precipitação",
-            "start": { "x": 0.18, "y": 0.52 },
-            "targetId": "t-precipitacao"
-        },
-        {
-            "text": "Infiltração",
-            "start": { "x": 0.18, "y": 0.68 },
-            "targetId": "t-infiltracao"
-        }
+    {
+      "text": "Infiltração",
+      "start": { "x": 0.18, "y": 0.68 },
+      "targetId": "t-infiltracao"
+    }
+  ],
+  "quiz": {
+    "settings": {
+      "shuffleOptions": true
+    },
+    "sprites": {
+      "questionSprite": "questionSprite",
+      "answerSprite": "answerSprite",
+      "answerSpriteCorrect": "answerSpriteCorrect",
+      "answerSpriteWrong": "answerSpriteWrong"
+    },
+    "questions": [
+      {
+        "id": "q1",
+        "question": "Qual é a etapa em que a água se transforma em vapor?",
+        "options": [
+          { "text": "Condensação", "isCorrect": false },
+          { "text": "Precipitação", "isCorrect": false },
+          { "text": "Evaporação", "isCorrect": true },
+          { "text": "Infiltração", "isCorrect": false }
+        ]
+      },
+      {
+        "id": "q2",
+        "question": "O que acontece na condensação?",
+        "options": [
+          { "text": "Formação das nuvens", "isCorrect": true },
+          { "text": "Queda da chuva", "isCorrect": false },
+          { "text": "Evaporação da água", "isCorrect": false },
+          { "text": "Absorção pelo solo", "isCorrect": false }
+        ]
+      },
+      {
+        "id": "q3",
+        "question": "Qual etapa devolve a água para a superfície em forma de chuva?",
+        "options": [
+          { "text": "Condensação", "isCorrect": false },
+          { "text": "Precipitação", "isCorrect": true },
+          { "text": "Infiltração", "isCorrect": false },
+          { "text": "Evaporação", "isCorrect": false }
+        ]
+      },
+      {
+        "id": "q4",
+        "question": "Qual processo abastece os lençóis freáticos?",
+        "options": [
+          { "text": "Infiltração", "isCorrect": true },
+          { "text": "Precipitação", "isCorrect": false },
+          { "text": "Condensação", "isCorrect": false },
+          { "text": "Evaporação", "isCorrect": false }
+        ]
+      },
+      {
+        "id": "q5",
+        "question": "Qual desses fenômenos NÃO faz parte do ciclo da água?",
+        "options": [
+          { "text": "Evaporação", "isCorrect": false },
+          { "text": "Filtração", "isCorrect": true },
+          { "text": "Condensação", "isCorrect": false },
+          { "text": "Precipitação", "isCorrect": false }
+        ]
+      }
     ]
-    
+  }
 }
