@@ -79,6 +79,7 @@ export default class Modal extends Phaser.GameObjects.Container {
     this.alpha = 0;
   }
 
+  //refreshes layout when modal is opened (adapting to screen size)
   refreshLayout() {
     const W = this.scene.scale.width;
     const H = this.scene.scale.height;

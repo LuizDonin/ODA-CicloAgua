@@ -88,7 +88,7 @@ export default class dragSystem extends Phaser.Scene {
       );
     };
 
-    // Targets
+    // Drag and drop targets
     this.targetsById = new Map();
 
     targets.forEach((t) => {
@@ -225,6 +225,7 @@ export default class dragSystem extends Phaser.Scene {
     });
   }
 
+  //Opens final modal - calling the quiz scene on modal button
   openResultModal() {
     this.clearFeedback?.();
 
